@@ -2,8 +2,14 @@
 
 /*this is an example for how to put background image ../ stands for 'go outside this folder' '*/
 
-/*body {*/
-  /*background-image: url("../img/example.img");*/
-/*}*/
+body {
+  background-image: url("../img/wood-background.jpg");
+}
+/*please remove this temoprary styles*/
+.temporary-title {
+  color: white;
+}
 
-
+.temporary-spin {
+  color: white;
+}
