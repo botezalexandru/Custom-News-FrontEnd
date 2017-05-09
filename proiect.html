@@ -1,0 +1,155 @@
+<html>
+<head>
+	<link href="styles.css" rel="stylesheet">
+	<script type="text/javascript" src="../assets/jquery/jquery.min.js"></script>
+	<script type="text/javascript" src="turnjs4/lib/turn.js"></script>
+</head>
+
+<body background="lemn.jpg" >
+<div class="main">
+	<div>
+		<button class="util" style="float:left;width:100px;" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Register</button>
+		<br> <br>
+		<button class="util" style="float:left;width:100px;" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login</button>
+		<br> <br>
+		<button class="util" style="float:left;width:100px;" onclick="document.getElementById('id03').style.display='block'" style="width:auto;">Logout</button>
+		<br>
+	</div>
+	<div id="id01" class="modal">
+		<form class="modal-content animate" action="index.php?action=register" method="POST">
+			<div class="imgcontainer">
+				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+			</div>
+
+			<div class="container">
+				<label><b>Username</b></label>
+				<input type="text" placeholder="Enter Username" name="username" required>
+
+				<label><b>Password</b></label>
+				<input type="password" placeholder="Enter Password" name="password" required>
+
+				<label><b>Confirm Password</b></label>
+				<input type="password" placeholder=" Enter Password" name="password" required>
+				<input type="hidden" value="register" name="action">
+
+				<label><b>Email</b></label>
+				<input type="text" placeholder="Enter Email" name="email" required>
+				<button type="submit">Register</button>
+			</div>
+			<div class="container" style="background-color:#f1f1f1">
+				<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+			</div>
+		</form>
+	</div>
+
+
+	<div class="flipbook-viewport">
+		<div class="container">
+			<div class="flipbook">
+				<div style="background-image:url(pages/a.jpg)">
+					<div class="content">
+						<h1>Lately News </h1>
+						<div class="image1"></div>​
+						<div class="image2"></div>​
+						<h5>-1-</h5>
+					</div>
+
+				</div>
+				<div style="background-image:url(pages/a.jpg)">
+					<div class="content">
+						<h3>Lately News</h3>
+						<p> Ruşii marchează astăzi 72 de ani de la victoria împotriva Germaniei naziste cu o paradă militară impresionantă la Moscova, pentru
+							care s-au pregătit mai mult de o lună.</p>
+
+
+					<div>
+						<h4>Rusia </h4>
+						<p>Finlanda a introdus, în premieră, un proiect pilot prin care le oferă unor cetăţeni un venit lunar de bază. Iar efectul direct al acestei măsuri a fost unul pozitiv
+							şi neaşteptat, spun specialiştii citaţi de The Independent</p>
+					</div>
+					<h5>-2-</h5>
+					</div>
+				</div>
+
+				<div style="background-image:url(pages/a.jpg)">
+					<div class="content">
+
+						<div class = "left" >
+							<h3>Articol Stanga </h3>
+						<p>Articol stanga.a Opera comică pentru copii, avalanşa premierelor a continuat şi în această primăvară, producţiile lirice alternând cu cele de balet, cea mai recentă propunere... da
+							nsantă având loc în urmă cu o lună, când a văzut lumina rampei Pinocchio, inspirată, desigur, de celebra povestire de Collodi.  </p>
+						</div>
+
+						<div class = "right">
+							<h3>Articol Dreapta </h3>
+							<p>Articol dreapta.În Strategia Naţională de Apărare a Ţării pentru perioada 2015-2019 putem identifica trei paragrafe referitoare la educaţie,
+							inserate în finalul documentului, ce reprezintă mai mult o odă dedicată parteneriatul cu SUA şi Uniunea Europeană. </p>
+						</div>
+						<h5>-3-</h5>
+					</div>
+
+				</div>
+
+				<div style="background-image:url(pages/a.jpg)">
+					<div class="content">
+						<h5>-4-</h5>
+					</div>
+
+				</div>
+
+				<div style="background-image:url(pages/a.jpg)">
+					<div class="content">
+
+					</div>
+				</div>
+				<div style="background-image:url(pages/a.jpg)">
+					<div class="content">
+
+					</div>
+				</div>
+				<div style="background-image:url(pages/a.jpg)"></div>
+				<div style="background-image:url(pages/a.jpg)"></div>
+				<div style="background-image:url(pages/a.jpg)"></div>
+				<div style="background-image:url(pages/a.jpg)"></div>
+				<div style="background-image:url(pages/a.jpg)"></div>
+				<div style="background-image:url(pages/a.jpg)"></div>
+			</div>
+		</div>
+	</div>
+	<img id="busola" src="busola.png" alt="bus" usemap="#busolamap">
+	<map name="busolamap">
+		<area shape="rectagle" coords="0,100,82,180" href="https://www.twitter.com/" alt="Twitter">
+		<area shape="circle" coords="180,100,20" href="https://google.com/" alt="Google">
+		<area shape="circle" coords="100,30,20" href="https://www.facebook.com" alt="Facebook">
+		<area shape="circle" coords="100,180,20" href="https://ro.pinterest.com" alt="Pininterest">
+	</map>
+	<img id="login" src="login.png">
+</div>
+</body>
+
+<script type="text/javascript">
+	$('.flipbook').turn({
+		// Width
+
+		width:922,
+
+		// Height
+
+		height:600,
+
+		// Elevation
+
+		elevation: 50,
+
+		// Enable gradients
+
+		gradients: true,
+
+		// Auto center this flipbook
+
+		autoCenter: true
+
+    });
+</script>
+
+</html>
