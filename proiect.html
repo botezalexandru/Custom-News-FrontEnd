@@ -1,8 +1,22 @@
 <html>
 <head>
-	<link href="styles.css" rel="stylesheet">
-	<script type="text/javascript" src="../assets/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="turnjs4/lib/turn.js"></script>
+  <title>News Feed</title>
+  <meta name="description" content="News Feed IP">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://use.fontawesome.com/50d7fa5956.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+                                             integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link
+    href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic'
+    rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main.css" type="text/css" media="all"/>
+  <link rel="stylesheet" href="views/header.css" type="text/css" media="all"/>
+  <link rel="stylesheet" href="style.css" type="text/css" media="all"/>
 </head>
 
 <body background="lemn.jpg" >
@@ -15,13 +29,13 @@
 		<button class="util" style="float:left;width:100px;" onclick="document.getElementById('id03').style.display='block'" style="width:auto;">Logout</button>
 		<br>
 	</div>
-	<div id="id01" class="modal">
+	<div id="id01" class="user-modal">
 		<form class="modal-content animate" action="index.php?action=register" method="POST">
 			<div class="imgcontainer">
 				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
 			</div>
 
-			<div class="container">
+			<div class="user-modal-container">
 				<label><b>Username</b></label>
 				<input type="text" placeholder="Enter Username" name="username" required>
 
@@ -36,7 +50,7 @@
 				<input type="text" placeholder="Enter Email" name="email" required>
 				<button type="submit">Register</button>
 			</div>
-			<div class="container" style="background-color:#f1f1f1">
+			<div class="user-modal-container" style="background-color:#f1f1f1">
 				<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
 			</div>
 		</form>
@@ -127,29 +141,13 @@
 </div>
 </body>
 
-<script type="text/javascript">
-	$('.flipbook').turn({
-		// Width
-
-		width:922,
-
-		// Height
-
-		height:600,
-
-		// Elevation
-
-		elevation: 50,
-
-		// Enable gradients
-
-		gradients: true,
-
-		// Auto center this flipbook
-
-		autoCenter: true
-
-    });
-</script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+<!--//our js files-->
+<script type="text/javascript" src="js/turnjs4/lib/turn.js"></script>
+<script src="js/main.js"></script>
 
 </html>

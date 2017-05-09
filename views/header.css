@@ -61,7 +61,7 @@ button:hover {
     position: relative;
 }
 
-.container {
+.user-modal-container {
     padding: 16px;
 }
 h2{
@@ -71,7 +71,7 @@ h2{
     top: 150px;
 
 }
-	
+
 
 span.psw {
     float: right;
@@ -79,7 +79,7 @@ span.psw {
 }
 
 /* The Modal (background) */
-.modal {
+.user-modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -141,8 +141,8 @@ span.psw {
     margin-left:200px;
     float:none;
 }
-.poll-body { 
-	font-size: 62.5%; 
+.poll-body {
+	font-size: 62.5%;
 	font-family: Georgia, serif;
 }
 .poll-body h6 {
@@ -161,7 +161,7 @@ fieldset {
 	width: 400px;
 	padding: 8px 15px 15px 15px;
 	border: 1px solid white;
-	display: block; 
+	display: block;
 	}
 legend {
         margin-left: 45px;
